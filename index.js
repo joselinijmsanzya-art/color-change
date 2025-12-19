@@ -8,8 +8,8 @@ const randomBtn = document.getElementById('randomBtn');
 
 function applyColor(color) {
   // update the small display box
-  display.style.backgroundColor = color;
-  colorName.textContent = color.charAt(0).toUpperCase() + color.slice(1);
+  // display.style.backgroundColor = color;
+  // colorName.textContent = color.charAt(0).toUpperCase() + color.slice(1);
 
   // make the whole page background match the color and adjust text color for readability
   document.body.style.backgroundColor = color;
@@ -33,3 +33,4 @@ function pickRandomColor() {
 randomBtn.addEventListener('click', pickRandomColor);
 // initial text state (no color yet)
 colorName.textContent = 'No color selected';
+
