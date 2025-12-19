@@ -1,7 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    margin-top: 50px;
+    /* leave space at top for the fixed title */
+    padding-top: 70px;
     transition: background-color 0.35s ease, color 0.2s ease;
 }
 
@@ -54,9 +55,14 @@ body {
 }
 
 .page-title {
-    font-size: 28px;
-    margin-bottom: 18px;
+    font-size: 22px;
+    margin: 0;
     letter-spacing: 0.6px;
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    text-align: left;
+    z-index: 100;
 }
 
 .bottom-button {
@@ -69,3 +75,5 @@ body {
 #randomBtn:focus {
     outline: 3px solid rgba(0,0,0,0.12);
 }
+
+
